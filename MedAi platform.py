@@ -349,7 +349,7 @@ with st.sidebar:
     st.markdown('<span style="font-size:11px;color:#0F6E56;font-weight:600;">⚡ AGENTIC MODE</span>', unsafe_allow_html=True)
     st.markdown("---")
     st.markdown("**🔑 OpenRouter API Key**")
-    api_key = st.text_input("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", type="password", placeholder="sk-or-v1-...", label_visibility="collapsed", key="api_key_input")
+    api_key = st.text_input("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", type="password", placeholder="sk-or-v1-...", label_visibility="collapsed", key="api_key_input")
     if api_key and api_key.startswith("sk-or"):
         st.success("✅ Connected", icon="🟢")
     elif api_key:

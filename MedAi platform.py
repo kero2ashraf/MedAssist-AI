@@ -415,6 +415,7 @@ active_agent = st.session_state.active_agent
 agent = AGENTS[active_agent]
 current_tab = st.session_state.tab
 agent_model_id = agent["default_model"]
+api_key = st.session_state.get("api_key_input", "")
 
 TAB_META = {
     "💬 Chat":              {"icon": agent["icon"], "label": f"{active_agent} Agent",    "sublabel": agent["desc"],                              "color": agent["color"]},
